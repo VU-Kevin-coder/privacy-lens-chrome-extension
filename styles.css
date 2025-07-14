@@ -1,0 +1,138 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 400px;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.container {
+  padding: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 15px 0;
+  color: #1a73e8;
+  text-align: center;
+}
+
+h2 {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #5f6368;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: #5f6368;
+  border-bottom: 2px solid transparent;
+}
+
+.tabs button.active {
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+  font-weight: bold;
+}
+
+.content-view {
+  display: none;
+}
+
+.content-view.active {
+  display: block;
+}
+
+.filter-controls {
+  margin-bottom: 10px;
+}
+
+.filter-controls input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.data-list {
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.request-item, .cookie-item {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.request-domain {
+  font-weight: bold;
+  color: #1a73e8;
+  margin-bottom: 5px;
+}
+
+.request-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.request-type {
+  background: #e8f0fe;
+  color: #1a73e8;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+.request-count {
+  background: #f1f3f4;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+.cookie-name {
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.cookie-domain {
+  color: #5f6368;
+  font-size: 11px;
+  margin: 3px 0;
+}
+
+.cookie-details {
+  margin-top: 5px;
+  font-size: 11px;
+  color: #5f6368;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.error {
+  color: #d32f2f;
+}

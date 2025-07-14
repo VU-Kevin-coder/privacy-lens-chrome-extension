@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Lens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Lens</h1>
+    <div class="tabs">
+      <button id="requests-tab" class="active">Requests</button>
+      <button id="cookies-tab">Cookies</button>
+    </div>
+    
+    <div id="requests-view" class="content-view">
+      <h2>Third-Party Requests</h2>
+      <div class="filter-controls">
+        <input type="text" id="domain-filter" placeholder="Filter domains...">
+      </div>
+      <div id="requests-list" class="data-list"></div>
+    </div>
+    
+    <div id="cookies-view" class="content-view" style="display:none;">
+      <h2>Cookies</h2>
+      <div class="filter-controls">
+        <input type="text" id="cookie-filter" placeholder="Filter cookies...">
+      </div>
+      <div id="cookies-list" class="data-list"></div>
+    </div>
+    
+    <div id="loading" class="loading">Loading data...</div>
+    <div id="error" class="error" style="display:none;"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
